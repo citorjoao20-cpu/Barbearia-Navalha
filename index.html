@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barbearia Navalha</title>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="pole" aria-hidden="true"></div>
+
+  <header>
+    <nav aria-label="Principal">
+      <a class="logo" href="#topo">NAVALHA</a>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#agendar">Agendar</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="topo">
+    <section class="hero">
+      <h1>Barbearia<br>Navalha</h1>
+      <p class="lead">Corte na tesoura, barba na navalha e toalha quente. Atendimento com hora marcada, sem fila.</p>
+      <a class="btn" href="#agendar">Agendar horário</a>
+      <a class="btn ghost" href="#servicos">Ver preços</a>
+      <small>Segunda a sábado · a partir das 9h</small>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços e preços</h2>
+      <ul class="price-list">
+        <li><h3>Corte masculino</h3><span class="price">R$ 45</span><p>Máquina ou tesoura, com acabamento na navalha.</p></li>
+        <li><h3>Barba completa</h3><span class="price">R$ 35</span><p>Toalha quente, navalha e hidratação.</p></li>
+        <li><h3>Corte + barba</h3><span class="price">R$ 70</span><p>O combo mais pedido da casa.</p></li>
+        <li><h3>Pezinho e acabamento</h3><span class="price">R$ 15</span><p>Para manter o corte em dia entre as visitas.</p></li>
+        <li><h3>Sobrancelha</h3><span class="price">R$ 15</span><p>Feita na navalha ou na pinça.</p></li>
+      </ul>
+    </section>
+
+    <section id="agendar">
+      <h2>Agende seu horário</h2>
+      <form class="booking" id="form" novalidate>
+        <label for="nome">Seu nome</label>
+        <input id="nome" type="text" autocomplete="name" placeholder="Ex.: Carlos">
+
+        <label for="servico">Serviço</label>
+        <select id="servico"></select>
+
+        <label for="data">Dia</label>
+        <input id="data" type="date">
+
+        <fieldset>
+          <legend>Horário</legend>
+          <div class="slots" id="slots">Escolha um dia para ver os horários.</div>
+        </fieldset>
+
+        <p class="msg" id="msg" role="alert"></p>
+        <button class="btn" type="submit">Confirmar pelo WhatsApp</button>
+      </form>
+    </section>
+
+    <section id="contato">
+      <h2>Onde estamos</h2>
+      <div class="info">
+        <div><h3>Endereço</h3><p>Rua das Palmeiras, 123<br>Centro</p></div>
+        <div><h3>Horários</h3><p>Segunda a sexta: 9h às 19h<br>Sábado: 9h às 17h<br>Domingo: fechado</p></div>
+        <div><h3>WhatsApp</h3><p><a href="#" id="zap">(00) 00000-0000</a></p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer><div>© <span id="ano"></span> Barbearia Navalha. Todos os direitos reservados.</div></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
